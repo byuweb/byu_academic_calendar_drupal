@@ -1,0 +1,7 @@
+name: BYU Academic Calendar
+type: module
+description: Displays BYU's Academic Calendar
+package: Custom
+core: 8.x
+dependencies:
+  - drupal:block

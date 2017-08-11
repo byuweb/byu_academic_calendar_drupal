@@ -1,0 +1,7 @@
+byu_academic_calendar:
+  version: 1.x
+  css:
+    theme:
+      css/calendar-theme.css: {}
+  js:
+    js/calendar.js: {}

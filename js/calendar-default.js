@@ -129,7 +129,7 @@ window.onload = function () {
         return tipPos;
     }
 
-    window.onresize = windowResize;
+    // window.onresize = windowResize;
 
     function windowResize() {
         var accal = document.getElementById("byu-academic-calendar");
@@ -146,7 +146,21 @@ window.onload = function () {
         }
         accal.className = "calendar-content" + sizeClass;
         console.log(accalWide, accal.className);
+        var calkey = document.getElementById("byu-academic-calendar-key");
+        var calkeyWide = calkey.offsetWidth;
+        var sizeClass = "";
+        if (calkeyWide >= 1100) {
+            sizeClass = " calkey-size-1";
+        } else if (calkeyWide >= 857) {
+            sizeClass = " calkey-size-2";
+        } else if (calkeyWide >= 570) {
+            sizeClass = " calkey-size-3";
+        } else {
+            sizeClass = " calkey-size-4";
+        }
+        calkey.className = "calendar-key" + sizeClass;
+        console.log(calkeyWide, calkey.className);
     }
 
-    windowResize();
+    // windowResize();
 }

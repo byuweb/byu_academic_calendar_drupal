@@ -1,6 +1,15 @@
+@import url('//fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500');
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .calendar-content * {
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .calendar-content {
@@ -245,7 +254,6 @@
 }
 
 .sidebar-item {
-    float: left;
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
@@ -262,7 +270,7 @@
 }
 
 .calendar-months {
-    width: 70%;
+    width: 100%;
 }
 
 .calendar-month {
@@ -271,6 +279,7 @@
 
 .calendar-sidebar {
     width: 250px;
+    margin: 0 auto;
 }
 
 .calendar-sidebar table, .calendar-key table td:nth-child(2) {
@@ -279,8 +288,9 @@
 }
 
 .calendar-key {
-    clear: both;
-    text-align: left;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 .key-item td:first-child {
@@ -353,31 +363,15 @@ td.fall-term, .fall-term tr:nth-child(1) {
 }
 
 .calendar-size-1 .calendar-months {
-    width: 71%;
+    width: 100%;
     float: left;
 }
 
-.calendar-size-1 .calendar-sidebar {
-    float: left;
-    width: 230px;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: -7px;
+.calkey-size-1 .key-item {
+    width: 30%;
 }
 
 /* ================================ calendar-size-2 ================================ */
-.calendar-size-2 .calendar-sidebar, .calendar-size-3 .calendar-sidebar {
-    width: 580px;
-    clear: both;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.calendar-size-2 .sidebar-item, .calendar-size-3 .sidebar-item {
-    width: 270px;
-    margin: 20px 10px;
-}
-
 .calendar-size-2 .calendar-month {
     height: 250px;
 }
@@ -390,27 +384,8 @@ td.fall-term, .fall-term tr:nth-child(1) {
     clear: both;
 }
 
-.calendar-size-2 .calendar-key, .calendar-size-3 .calendar-key, .calendar-size-4 .calendar-key {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.calendar-size-2 .key-item {
-    margin: 0px 10px;
-    display: inline-block;
-    float: none;
-}
-
-.calendar-size-2 .sidebar-item:nth-child(2n-1), .calendar-size-3 .sidebar-item:nth-child(2n-1) {
-    clear: both;
-}
-
-.calendar-size-2 .calendar-key table {
-    margin-top: 20px;
-}
-
-.calendar-size-2 .key-item-table table {
-    margin-top: 0;
+.calkey-size-2 .key-item {
+    width: 30%;
 }
 
 /* ================================ calendar-size-3 ================================ */
@@ -420,13 +395,11 @@ td.fall-term, .fall-term tr:nth-child(1) {
     max-width: 534px;
 }
 
-/* ================================ calendar-size-4 ================================ */
-.calendar-size-4 .calendar-sidebar {
-    width: 250px;
-    text-align: center;
-    margin: 0 auto;
+.calkey-size-3 .key-item {
+    width: 45%;
 }
 
+/* ================================ calendar-size-4 ================================ */
 .calendar-size-4 .calendar-months {
     display: inline-block;
     width: 250px;
@@ -437,18 +410,13 @@ td.fall-term, .fall-term tr:nth-child(1) {
     margin: 0;
 }
 
-.calendar-size-4 .calendar-key, .calendar-size-4 .key-item {
-    width: 250px;
-    margin: 0 auto;
-}
-
 .calendar-size-4 .calendar-title {
     font-size: 42px;
     line-height: 50px;
 }
 
-.key-item {
-    padding-top: 20px;
+.calkey-size-4 .key-item {
+    width: 95%;
 }
 
 .cal-date {

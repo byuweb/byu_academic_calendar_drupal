@@ -1,0 +1,129 @@
+.calendar-title {
+    display: none;
+}
+.calendar-sidebar {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(1, 250px);
+    justify-content: space-between;
+    width: 100%;
+    min-width: 222px;
+}
+.calendar-sidebar-item {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+.calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+}
+.year-text {
+    font-size: 80px;
+    font-family: "Vitesse B";
+    color: #002E5D;
+}
+.calendar-buttons {
+    text-align: right;
+    margin: 1rem .5rem 2rem .5rem;
+}
+.calendar-controls button {
+    border: 1px solid #BEBEBE;
+    border-radius: 20px;
+    background: transparent;
+    margin-right: 1rem;
+}
+.calendar-controls button i{
+    border: solid #002E5D;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 1rem;
+}
+.calendar-controls button:disabled i {
+    border-color: #BEBEBE;
+}
+.calendar-controls button i.next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.calendar-controls button i.prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.calendar-next-btn {
+    padding: 2px 4px 1px 1px;
+    line-height: 1;
+}
+.calendar-prev-btn {
+    padding: 2px 1px 1px 4px;
+    line-height: 1;
+}
+.calendar-content {
+    padding: 0;
+}
+.cal-month {
+    background-color: #002E5D;
+}
+.holiday-color {
+    color: #002E5D;
+    border-color: #002E5D;
+}
+.calendar-months {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 280px);
+    justify-content: space-between;
+}
+.calendar-month {
+    margin: 0;
+}
+.calendar-month-table {
+    width: 100%;
+}
+.calendar-key {
+    text-align: center;
+}
+#academic-calendar-btn {
+    background-color: #002E5D;
+    color: white;
+    display: block;
+    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    margin: 1rem auto;
+    padding: 1.6rem;
+    width: 158px;
+    height: 64px;
+}
+@media (min-width: 1024px) and (max-width: 1823px) {
+    .calendar-sidebar {
+        grid-template-columns: repeat(2, 38%);
+        grid-template-rows: repeat(2, 190px);
+        justify-content: space-around;
+    }
+    .key-item {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 1023px) {
+    #byu-academic-calendar,
+    #byu-academic-calendar-key,
+    .calendar-controls{
+        display: none;
+    }
+    .calendar-sidebar {
+        grid-template-columns: repeat(1, 50%);
+        grid-template-rows: repeat(4, 175px);
+        justify-content: space-around;
+    }
+}
+@media (max-width: 767px) {
+    .calendar-sidebar {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 175px);
+    }
+}

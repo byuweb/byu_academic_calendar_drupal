@@ -2,6 +2,10 @@ byu_academic_calendar:
   version: 1.x
   css:
     theme:
-      css/calendar-theme.css: {}
+      css/calendar-theme-default.css: {}
+      css/calendar-theme-custom.css: {}
   js:
-    js/calendar.js: {}
+    js/calendar-default.js: {}
+    js/calendar-custom.js: {}
+  dependencies:
+    - core/jquery

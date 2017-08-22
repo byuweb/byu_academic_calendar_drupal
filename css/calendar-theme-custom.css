@@ -1,166 +1,189 @@
 .calendar-title {
-    display: none;
+  display: none;
 }
 .calendar-sidebar {
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    grid-template-rows: repeat(1, 220px);
-    justify-content: space-between;
-    width: 100%;
-    min-width: 222px;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(1, 220px);
+  justify-content: space-between;
+  width: 100%;
+  min-width: 222px;
 }
 .calendar-controls {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: space-between;
 }
 .year-text {
-    font-size: 80px;
-    font-family: "Vitesse B";
-    color: #002E5D;
+  font-size: 80px;
+  font-family: "Vitesse B";
+  color: #002e5d;
 }
 .calendar-buttons {
-    text-align: right;
-    margin: 1rem .5rem 2rem .5rem;
+  text-align: right;
+  margin: 1rem .5rem 2rem .5rem;
 }
 .calendar-controls button {
-    border: 1px solid #BEBEBE;
-    border-radius: 20px;
-    background: transparent;
-    margin-right: 1rem;
+  border: 1px solid #bebebe;
+  border-radius: 20px;
+  background: transparent;
+  margin-right: 1rem;
 }
-.calendar-controls button i{
-    border: solid #002E5D;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
-    margin: 1rem;
+.calendar-controls button i {
+  border: solid #002e5d;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 1rem;
 }
 .calendar-controls button:disabled i {
-    border-color: #BEBEBE;
+  border-color: #bebebe;
 }
 .calendar-controls button i.next {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .calendar-controls button i.prev {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 .calendar-next-btn {
-    padding: 2px 4px 1px 1px;
-    line-height: 1;
+  padding: 2px 4px 1px 1px;
+  line-height: 1;
 }
 .calendar-prev-btn {
-    padding: 2px 1px 1px 4px;
-    line-height: 1;
+  padding: 2px 1px 1px 4px;
+  line-height: 1;
 }
 .calendar-content {
-    padding: 0;
-}
-.divs-1 div {
-    padding: 0;
+  padding: 0;
 }
 .cal-month {
-    background-color: #002E5D;
-    font-size: 16px;
+  background-color: #002e5d;
+  font-size: 16px;
 }
 .holiday-color {
-    color: #002E5D;
-    border-color: #002E5D;
+  color: #002e5d;
+  border-color: #002e5d;
 }
 .calendar-months {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(2, 300px);
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 300px);
+  justify-content: space-between;
 }
 .calendar-month {
-    margin: 0;
+  margin: 0;
 }
-.calendar-month td,
 .calendar-month td.cal-month {
-    padding: 3px;
+  padding: 3px;
 }
 .calendar-month-table {
-    width: 100%;
+  width: 100%;
 }
 .calendar-key {
-    text-align: center;
+  text-align: center;
 }
 #academic-calendar-btn {
-    background-color: #002E5D;
-    color: white;
-    display: block;
-    font-family: "Gotham A", "Gotham B", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1;
-    margin: 1rem auto;
-    padding: 1.6rem;
-    width: 158px;
-    height: 64px;
+  background-color: #002e5d;
+  color: white;
+  display: block;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1;
+  margin: 1rem auto;
+  padding: 1.6rem;
+  width: 158px;
+  height: 64px;
 }
 @media (min-width: 1824px) {
-    .sidebar-item-table td {
-        padding: 5px 0 5px 8px;
-        font-size: 12px;
-    }
+  .sidebar-item-table td {
+    padding: 5px 0 5px 8px;
+    font-size: 12px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1823px) {
-    .calendar-sidebar {
-        grid-template-columns: repeat(2, 45%);
-        grid-template-rows: repeat(2, 200px);
-        justify-content: space-between;
-        margin-bottom: 3rem;
-    }
-    .key-item {
-        margin-left: 15px;
-    }
+  .calendar-sidebar {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .key-item {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1425px) {
+  .divs-1 div {
+    padding: 0;
+  }
+}
+@media (min-width: 1224px) and (max-width: 1424px) {
+  .key-item-table {
+    font-size: 12px;
+  }
+  .cal-date {
+    height: 30px;
+  }
+  .divs-1 div {
+    line-height: 23px;
+  }
+  .divs-2 div {
+    line-height: 25px;
+    font-size: 12px;
+    padding-left: 0;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1223px) {
-    .calendar-months {
-        grid-template-rows: repeat(2, 250px);
-    }
-    .calendar-month td {
-        padding: 0;
-    }
-    .key-item:first-of-type {
-        margin-left: 0;
-    }
-    .key-item-title {
-        font-size: 14px;
-    }
-    .key-item-table {
-        font-size: 10px;
-    }
-    .divs-2 div,
-    .divs-1 div {
-        line-height: 22px;
-        padding: 0;
-        font-size: 14px;
-    }
-    .cal-date {
-        font-size: 14px;
-        height: inherit;
-    }
+  .calendar-months {
+    grid-template-rows: repeat(2, 250px);
+  }
+  .calendar-month td {
+    padding: 0;
+  }
+  .calendar-key {
+    text-align: left;
+  }
+  .key-item:first-of-type {
+    margin-left: 0;
+  }
+  .key-item-title {
+    font-size: 14px;
+  }
+  .key-item-table {
+    font-size: 10px;
+  }
+  .divs-2 div,
+  .divs-1 div {
+    line-height: 22px;
+    padding: 0;
+    font-size: 12px;
+  }
+  .divs-2 div {
+    font-size: 12px;
+  }
+  .cal-date {
+    font-size: 12px;
+    height: inherit;
+  }
 }
 @media (max-width: 1023px) {
-    #byu-academic-calendar,
-    #byu-academic-calendar-key,
-    .calendar-controls{
-        display: none;
-    }
-    .calendar-sidebar {
-        grid-template-columns: repeat(1, 50%);
-        grid-template-rows: repeat(4, 175px);
-        justify-content: space-around;
-    }
+  #byu-academic-calendar,
+  #byu-academic-calendar-key,
+  .calendar-controls {
+    display: none;
+  }
+  .calendar-sidebar {
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(4, 175px);
+    justify-content: space-around;
+  }
 }
 @media (max-width: 767px) {
-    .calendar-sidebar {
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(4, 175px);
-    }
+  .calendar-sidebar {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, 175px);
+  }
 }

@@ -16,7 +16,7 @@
 }
 .year-text {
   font-size: 80px;
-  font-family: "Vitesse B";
+  font-family: "Vitesse A", "Vitesse B", serif;
   color: #002e5d;
 }
 .calendar-buttons {

@@ -7,5 +7,3 @@ byu_academic_calendar:
   js:
     js/calendar-default.js: {}
     js/calendar-custom.js: {}
-  dependencies:
-    - core/jquery

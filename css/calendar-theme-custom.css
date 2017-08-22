@@ -4,15 +4,10 @@
 .calendar-sidebar {
     display: grid;
     grid-template-columns: repeat(4, 24%);
-    grid-template-rows: repeat(1, 250px);
+    grid-template-rows: repeat(1, 220px);
     justify-content: space-between;
     width: 100%;
     min-width: 222px;
-}
-.calendar-sidebar-item {
-    width: 100%;
-    margin: 0;
-    font-size: 16px;
 }
 .calendar-controls {
     display: grid;
@@ -63,8 +58,12 @@
 .calendar-content {
     padding: 0;
 }
+.divs-1 div {
+    padding: 0;
+}
 .cal-month {
     background-color: #002E5D;
+    font-size: 16px;
 }
 .holiday-color {
     color: #002E5D;
@@ -73,11 +72,15 @@
 .calendar-months {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(2, 280px);
+    grid-template-rows: repeat(2, 300px);
     justify-content: space-between;
 }
 .calendar-month {
     margin: 0;
+}
+.calendar-month td,
+.calendar-month td.cal-month {
+    padding: 3px;
 }
 .calendar-month-table {
     width: 100%;
@@ -99,14 +102,48 @@
     width: 158px;
     height: 64px;
 }
+@media (min-width: 1824px) {
+    .sidebar-item-table td {
+        padding: 5px 0 5px 8px;
+        font-size: 12px;
+    }
+}
 @media (min-width: 1024px) and (max-width: 1823px) {
     .calendar-sidebar {
-        grid-template-columns: repeat(2, 38%);
-        grid-template-rows: repeat(2, 190px);
-        justify-content: space-around;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 200px);
+        justify-content: space-between;
+        margin-bottom: 3rem;
     }
     .key-item {
         margin-left: 15px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .calendar-months {
+        grid-template-rows: repeat(2, 250px);
+    }
+    .calendar-month td {
+        padding: 0;
+    }
+    .key-item:first-of-type {
+        margin-left: 0;
+    }
+    .key-item-title {
+        font-size: 14px;
+    }
+    .key-item-table {
+        font-size: 10px;
+    }
+    .divs-2 div,
+    .divs-1 div {
+        line-height: 22px;
+        padding: 0;
+        font-size: 14px;
+    }
+    .cal-date {
+        font-size: 14px;
+        height: inherit;
     }
 }
 @media (max-width: 1023px) {

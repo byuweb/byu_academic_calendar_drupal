@@ -104,6 +104,11 @@
     font-size: 11px;
   }
 }
+@media (min-width: 1425px) {
+    .divs-1 div {
+        padding: 2px;
+    }
+}
 @media (min-width: 1024px) and (max-width: 1823px) {
   .calendar-sidebar {
     grid-template-columns: repeat(2, 45%);
@@ -115,11 +120,6 @@
     margin-left: 15px;
   }
 }
-@media (min-width: 1425px) {
-  .divs-1 div {
-    padding: 0;
-  }
-}
 @media (min-width: 1224px) and (max-width: 1424px) {
   .key-item-table {
     font-size: 12px;
@@ -128,7 +128,7 @@
     height: 30px;
   }
   .divs-1 div {
-    line-height: 23px;
+    line-height: 21px;
   }
   .divs-2 div {
     line-height: 25px;

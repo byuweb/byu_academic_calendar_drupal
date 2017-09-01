@@ -5,5 +5,4 @@ byu_academic_calendar:
       css/calendar-theme-default.css: {}
       css/calendar-theme-custom.css: {}
   js:
-    js/calendar-default.js: {}
-    js/calendar-custom.js: {}
+    js/calendar.js: {}

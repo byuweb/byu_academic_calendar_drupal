@@ -55,12 +55,16 @@
   padding: 2px 1px 1px 4px;
   line-height: 1;
 }
+.calendar-next-btn:focus,
+.calendar-prev-btn:focus {
+  outline: none;
+}
 .calendar-content {
   padding: 0;
 }
 .cal-month {
   background-color: #002e5d;
-  font-size: 16px;
+  font-size: 18px;
 }
 .holiday-color {
   color: #002e5d;

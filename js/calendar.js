@@ -1,4 +1,5 @@
 window.onload = function () {
+    /*** This is the default JS from the webservice but stored here because of Drupal 8 module limitations on JavaScript  ***/
     var isClicked;
     var followLink;
     var metaTag = document.createElement('meta');
@@ -163,4 +164,63 @@ window.onload = function () {
     }
 
     // windowResize();
+
+  /*** END DEFAULT JAVASCRIPT ***/
+
+
+
+
+  
+  /*** BEGIN CUSTOM JAVASCRIPT FOR DRUPAL MODULE ***/
+  const CURRENT_YEAR= new Date().getFullYear();
+  const CURRENT_HALF = (new Date().getMonth() < 6) ? 1 : 2;
+  var selectedYear = CURRENT_YEAR;
+  var selectedHalf = CURRENT_HALF;
+  var nextButtons = document.getElementsByClassName('calendar-next-btn');
+  var prevButtons = document.getElementsByClassName('calendar-prev-btn');
+  //display current calendar
+  document.getElementById(selectedYear+"-"+selectedHalf).classList.remove('hidden');
+  for(var i = 0; i < nextButtons.length; i++) {
+    nextButtons[i].addEventListener("click", nextCal);
+  }
+  for(var i = 0; i < prevButtons.length; i++) {
+    prevButtons[i].addEventListener("click", prevCal);
+  }
+
+  function prevCal() {
+    document.getElementById(selectedYear+"-"+selectedHalf).classList.add('hidden');
+    if(selectedHalf === 2) {
+      selectedHalf = 1;
+    } else {
+      selectedHalf = 2;
+      selectedYear -= 1;
+    }
+    displayCalendar(selectedYear, selectedHalf);
+  }
+
+  function nextCal() {
+    document.getElementById(selectedYear+"-"+selectedHalf).classList.add('hidden');
+    if(selectedHalf === 1) {
+      selectedHalf = 2;
+    }
+    else {
+      selectedHalf = 1;
+      selectedYear += 1;
+    }
+    displayCalendar(selectedYear, selectedHalf);
+  }
+
+  function displayCalendar(year, half)
+  {
+    //check if buttons need to be disabled
+    var nextBtn = document.getElementById(selectedYear+'-'+selectedHalf+'-next-btn');
+    var prevBtn = document.getElementById(selectedYear+'-'+selectedHalf+'-prev-btn');
+    if(selectedYear == CURRENT_YEAR + 1 && selectedHalf == 2) nextBtn.disabled = true;
+    else nextBtn.disabled = false;
+    if(selectedYear == CURRENT_YEAR - 2 && selectedHalf == 1) prevBtn.disabled = true;
+    else prevBtn.disabled = false;
+
+    //display the current calendar
+    document.getElementById(year+"-"+half).classList.remove('hidden');
+  }
 }

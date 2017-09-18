@@ -37,9 +37,12 @@
   height: 40px;
   width: 40px;
 }
+.calendar-controls button:focus,
 .calendar-controls button:hover {
   border-color: #002e5d;
-}.calendar-controls button:disabled:hover {
+}
+.calendar-controls button:disabled:focus,
+.calendar-controls button:disabled:hover {
   border-color: #bebebe;
 }
 .calendar-controls button i {

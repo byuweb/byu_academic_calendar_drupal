@@ -31,35 +31,32 @@
 }
 .calendar-controls button {
   border: 1px solid #bebebe;
-  border-radius: 20px;
+  border-radius: 30px;
   background: transparent;
   margin-right: 1rem;
+  height: 40px;
+  width: 40px;
 }
-.calendar-controls button i {
-  border: solid #002e5d;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 4px;
-  margin: 1rem;
+.calendar-controls button:focus,
+.calendar-controls button:hover {
+  border-color: #002e5d;
 }
-.calendar-controls button:disabled i {
+.calendar-controls button:disabled:focus,
+.calendar-controls button:disabled:hover {
   border-color: #bebebe;
 }
-.calendar-controls button i.next {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.calendar-controls button i {
+  color: #002e5d;
+  font-size: 18pt;
 }
-.calendar-controls button i.prev {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+.calendar-prev-btn i {
+  margin: 4px 8px 6px 5px;
 }
-.calendar-next-btn {
-  padding: 2px 4px 1px 1px;
-  line-height: 1;
+.calendar-next-btn i {
+  margin: 4px 5px 6px 8px;
 }
-.calendar-prev-btn {
-  padding: 2px 1px 1px 4px;
-  line-height: 1;
+.calendar-controls button:disabled i {
+  color: #bebebe;
 }
 .calendar-next-btn:focus,
 .calendar-prev-btn:focus {

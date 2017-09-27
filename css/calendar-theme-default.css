@@ -192,7 +192,7 @@
 
 .add-drop-deadline-text, .second-add-drop-deadline-text, .withdraw-deadline-text, .first-withdraw-deadline-text, .second-withdraw-deadline-text, .discontinuance-deadline-text, .monday-instruction-text, .friday-instruction-text, .no-classes-text, .start-end, .commencement-text, .convocations-text, .grade-submission-text, .grades-online-text, .last-day-text, .start-of-classes-text, .first-day-text, .fall-priority-registration-text, .spring-summer-registration-text, .winter-priority-registration-text, .freshmen-fall-registration-text, .freshmen-winter-registration-text {
     font-weight: bold;
-    color: red;
+    color: #A90217;
     font-size: 12px;
     border: none;
 }

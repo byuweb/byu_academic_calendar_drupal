@@ -12,6 +12,10 @@
   width: 100%;
   min-width: 222px;
 }
+#byu-academic-calendar,
+.calendar-sidebar {
+  color: #666;  /* darker for accessibility */
+}
 .calendar-controls {
   display: grid;
   display: -ms-grid;

@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500');
+/*@import url('//fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500');*/
 
 .clearfix:after {
     content: "";
@@ -7,7 +7,7 @@
 }
 
 .calendar-content * {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Gotham A", "Gotham B", sans-serif;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -60,7 +60,7 @@
 }
 
 .accal-tooltip h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Gotham A", "Gotham B", sans-serif;
     width: 100%;
     background-color: #99b2cc;
     font-size: 16px;
@@ -69,12 +69,12 @@
     padding: 2px 5px 2px 5px;
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Gotham A", "Gotham B", sans-serif;
     font-weight: 300;
 }
 
 .accal-tooltip span {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Gotham A", "Gotham B", sans-serif;
     width: 100%;
     font-size: 16px;
     padding: 2px 5px 2px 5px;
@@ -84,7 +84,7 @@
 }
 
 .accal-tooltip > span > span {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Gotham A", "Gotham B", sans-serif;
     color: #777;
     font-size: 13px;
 }
@@ -337,10 +337,10 @@ td.fall-term, .fall-term tr:nth-child(1) {
     border: 1px solid #369;
 }
 
-.calendar-months td.cal-date:focus,
-.calendar-months td.cal-date:hover {
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+.calendar-months td.cal-date:focus a,
+.calendar-months td.cal-date:hover a {
+    font-weight: 600;
+    color: #000;
 }
 
 .education-week-color {

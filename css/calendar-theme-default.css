@@ -158,12 +158,12 @@
 }
 
 .exam-preparation-day-color {
-    background-color: #ffbdbd;
+    background-color: #ffdddd;
     border: none;
 }
 
 .final-exam-day-color {
-    background-color: #eecbff;
+    background-color: #f9ecff;
     border: none;
 }
 
@@ -173,12 +173,12 @@
 }
 
 .university-conference-color {
-    background-color: #A9D7FF;
+    background-color: #e7f4ff;
     border: none;
 }
 
 .uconf {
-    background-color: #A9D7FF;
+    background-color: #e7f4ff;
 }
 
 .graduation-color, .commencement-color, .convocations-color {
@@ -205,7 +205,7 @@
 }
 
 .academic-calendar-event-color {
-    background-color: #FF6961;
+    background-color: #fef2d0;
 }
 
 .calendar-month {

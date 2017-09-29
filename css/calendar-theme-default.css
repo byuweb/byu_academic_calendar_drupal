@@ -7,7 +7,7 @@
 }
 
 .calendar-content * {
-    font-family: "Gotham A", "Gotham B", sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -60,7 +60,7 @@
 }
 
 .accal-tooltip h3 {
-    font-family: "Gotham A", "Gotham B", sans-serif;
+    font-family: sans-serif;
     width: 100%;
     background-color: #99b2cc;
     font-size: 16px;
@@ -69,12 +69,12 @@
     padding: 2px 5px 2px 5px;
     box-sizing: border-box;
     color: #fff;
-    font-family: "Gotham A", "Gotham B", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
 }
 
 .accal-tooltip span {
-    font-family: "Gotham A", "Gotham B", sans-serif;
+    font-family: sans-serif;
     width: 100%;
     font-size: 16px;
     padding: 2px 5px 2px 5px;
@@ -84,8 +84,8 @@
 }
 
 .accal-tooltip > span > span {
-    font-family: "Gotham A", "Gotham B", sans-serif;
-    color: #777;
+    font-family: sans-serif;
+    color: #666;
     font-size: 13px;
 }
 

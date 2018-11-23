@@ -45,7 +45,7 @@ class AcademicCalendarBlock extends BlockBase {
 
                 $sidebar = isset($calArr[ "sidebar" ]) ? $calArr[ "sidebar" ] : "<h3>Sorry, the Academic Calendar is currently unavailable</h3>";
                 $key = isset($calArr[ "key" ]) ? $calArr[ "key" ] : "<h3>Sorry, the Academic Calendar is currently unavailable</h3>";
-                $date = "<div class=\"calendar-controls\"><div class=\"year-text\">{$y}</div><div class=\"calendar-buttons\"><button class=\"calendar-prev-btn\" id=\"{$y}-{$h}-prev-btn\" name=\"previous\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i><span class='hidden'>previous</span></button><button class=\"calendar-next-btn\" id=\"{$y}-{$h}-next-btn\" name=\"next\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i><span class='hidden'>next</span></button></div></div>";
+                $date = "<div class=\"calendar-controls\"><div class=\"year-text\">{$y}</div><div class=\"calendar-buttons\"><button class=\"calendar-prev-btn\" id=\"{$y}-{$h}-prev-btn\" name=\"previous\"><span><</span><span class='hidden'>previous</span></button><button class=\"calendar-next-btn\" id=\"{$y}-{$h}-next-btn\" name=\"next\"><span>></span><span class='hidden'>next</span></button></div></div>";
                 $html .= "<div id=\"{$y}-{$h}\" class=\"hidden\">";
                 $html .= $sidebar . $date . $calendar . $key;
                 $html .= "</div>";

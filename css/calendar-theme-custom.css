@@ -1,5 +1,5 @@
 .academic-calendar {
-  font-family: sans-serif;
+  font-family: "HCo Ringside Narrow SSm", Arial, Helvetica, sans-serif;;
 }
 .calendar-title {
   display: none;
@@ -28,7 +28,7 @@
 }
 .year-text {
   font-size: 80px;
-  font-family: "Vitesse A", "Vitesse B", serif;
+  font-family: "HCo Ringside Narrow SSm", Arial, Helvetica, sans-serif;
   color: #002e5d;
 }
 .calendar-buttons {
@@ -105,7 +105,7 @@
   background-color: #002e5d;
   color: white;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: "HCo Ringside Narrow SSm", Arial, Helvetica, sans-serif;;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
